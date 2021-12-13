@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: darkcyan;
     font-size: 30px;
@@ -23,7 +26,23 @@ button{
     font-size: 20px;
     border: 1px solid white;
     transition-duration: 0.3s;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
     
+}
+.contact{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact:hover{
+    background-color: cyan;
 }
 button:hover{
     background-color: cyan;
