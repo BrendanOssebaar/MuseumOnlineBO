@@ -4,6 +4,7 @@ html{
 body{
     background-color: darkcyan;
     font-size: 30px;
+    margin: 0;
 }
 h2{
     font-size: 20px;
@@ -13,11 +14,25 @@ h2{
 }
 nav{
     background: url(https://wallpaperaccess.com/full/562838.jpg) center;
-    box-sizing:content-box;
+    width: 100%;
+    height: 200px;    
     padding: 20px;
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    flex: auto;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.vertaling{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+
+
 }
 button{
     padding: 15px 20px;
@@ -29,6 +44,117 @@ button{
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     
+}
+.social{
+    display: flex;
+    justify-content: center;
+    
+}
+.instagram{
+    display: inline-flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 5px;
+    text-decoration: none;
+}
+.twitter{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+}
+.facebook{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+}
+.home{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.home:hover{
+    background-color: cyan;
+}
+.tentoonstellingen{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.tentoonstellingen:hover{
+    background-color: cyan;
+}
+.planbezoek{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.planbezoek:hover{
+    background-color: cyan;
+}
+.reviews{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.reviews:hover{
+    background-color: cyan;
+}
+.tickets{
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    transition-duration: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+.tickets:hover{
+    background-color: cyan;
 }
 .contact{
     padding: 15px 20px;
@@ -53,6 +179,7 @@ article{
     width: 60vw;
     padding: 40px;
 }
+
 img{
     width: 100%;
     border-radius: 5px;
@@ -63,7 +190,11 @@ img:hover{
 }
 .contactgegevens{
     display: flex;
-    
+
     height: 500px;
     background-color: darkmagenta;
+}
+.reviewpage{
+    background-color: darkgoldenrod;
+    width: 80vw;
 }
