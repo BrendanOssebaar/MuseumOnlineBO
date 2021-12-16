@@ -189,10 +189,23 @@ img:hover{
     transform: scale(1.05)
 }
 .contactgegevens{
-    display: flex;
-
-    height: 500px;
-    background-color: darkmagenta;
+    display: flex ;
+    width: 97vw;
+    margin: auto;
+    background-color: lightskyblue;
+    border: 8px solid darkslategrey;
+    height: 300px;
+}
+.contacten{
+    display: table-row;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+.tijden{
+    background-color: lightskyblue;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 6px;
 }
 .reviewpage{
     background-color: darkgoldenrod;
