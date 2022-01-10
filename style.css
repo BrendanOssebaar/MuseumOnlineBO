@@ -189,6 +189,33 @@ img{
 img:hover{
     transform: scale(1.05)
 }
+.slideshow{
+    height: 380px;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    margin-bottom: 40px;
+    border:darkslategrey solid 8px ;
+    border-radius: 30px;
+}
+.foto{
+    height: 420px;
+    padding-left: 35px ;
+    padding-right: 35px;
+    object-fit: cover;
+}
+.left{
+  height: 130px;
+  width: 150px;
+  border-radius: 10px;
+}
+.right{
+    height: 130px;
+    width: 150px;
+    border-radius: 10px;
+}
 .contactgegevens{
     display: flex ;
     align-items: center;
@@ -208,12 +235,50 @@ img:hover{
 .reviewpage{
     width: 80vw;
 }
+
+.Boven{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-decoration: none;
+    border: none;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
 @media screen and (max-width:1225px){
     .contactgegevens{ 
         font-size: 100%;
         height: 200px;
     }
 
+}
+@media screen and (max-width:1000px) {
+    article{
+        width: 80vw;
+    }
+    footer > p{
+        width: 80vw;
+    }
+    img:hover{
+        transform:none;
+    }
+    .Boven{
+        width: 60px;
+        height: 60px;
+        bottom:60px;
+        right: 60px;
+    }
+    .contactgegevens{
+        width: 100vw;
+    }
 }
 @media screen and (max-width:940px){
     .contactgegevens{
@@ -226,3 +291,31 @@ img:hover{
         text-align: center;
     }
 }
+
+@media screen and(max-width: 600px) {
+    body{
+        font-size: 16px;
+    }
+    article{
+        width: 100vw;
+        padding:20px;
+    }
+    h1{
+        font-size: 180%;
+
+    }
+    footer > p{
+        width: 100vw;
+        padding-left: 20px;
+    }
+    .Boven{
+        width: 60px;
+        height: 60px;
+        bottom:60px;
+        right: 60px;
+    }
+    .contactgegevens{
+        width: 100vw;
+    }
+}
+
