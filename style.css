@@ -191,7 +191,7 @@ img:hover{
 }
 .slideshow{
     height: 380px;
-    width: 85vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,21 +201,19 @@ img:hover{
     border-radius: 30px;
 }
 .foto{
-    height: 420px;
+    height: 390px;
+    width: 22vw;
     padding-left: 35px ;
     padding-right: 35px;
     object-fit: cover;
+    border-radius: 30px;
 }
-.left{
+.left ,.right{
   height: 130px;
   width: 150px;
   border-radius: 10px;
 }
-.right{
-    height: 130px;
-    width: 150px;
-    border-radius: 10px;
-}
+
 .contactgegevens{
     display: flex ;
     align-items: center;
@@ -234,6 +232,18 @@ img:hover{
 }
 .reviewpage{
     width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+section{
+    width: 30%;
+    margin: 10px;
+    border:solid darkslategrey 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: skyblue;
 }
 
 .Boven{
