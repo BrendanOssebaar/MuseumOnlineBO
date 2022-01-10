@@ -33,12 +33,7 @@ nav{
     text-decoration: none;
     font-size: 10px;
     color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-
-
+    position: absolute;
 }
 button{
     padding: 15px 20px;
@@ -214,7 +209,7 @@ img:hover{
     width: 80vw;
 }
 @media screen and (max-width:1225px){
-    .contactgegevens{
+    .contactgegevens{ 
         font-size: 100%;
         height: 200px;
     }
