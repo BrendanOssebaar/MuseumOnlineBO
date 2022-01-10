@@ -27,12 +27,7 @@ nav{
     text-decoration: none;
     font-size: 10px;
     color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-
-
+    position: absolute;
 }
 button{
     padding: 15px 20px;
@@ -210,4 +205,69 @@ img:hover{
 .reviewpage{
     background-color: darkgoldenrod;
     width: 80vw;
+}
+
+.Boven{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-decoration: none;
+    border: none;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+@media screen and (max-width:1000px) {
+    article{
+        width: 80vw;
+    }
+    footer > p{
+        width: 80vw;
+    }
+    img:hover{
+        transform:none;
+    }
+    .Boven{
+        width: 60px;
+        height: 60px;
+        bottom:60px;
+        right: 60px;
+    }
+    .contactgegevens{
+        width: 100vw;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    body{
+        font-size: 16px;
+    }
+    article{
+        width: 100vw;
+        padding:20px;
+    }
+    h1{
+        font-size: 180%;
+
+    }
+    footer > p{
+        width: 100vw;
+        padding-left: 20px;
+    }
+    .Boven{
+        width: 60px;
+        height: 60px;
+        bottom:60px;
+        right: 60px;
+    }
+    .contactgegevens{
+        width: 100vw;
+    }
 }
