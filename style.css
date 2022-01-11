@@ -197,7 +197,7 @@ img{
     border: 8px solid darkslategrey;
     height: 300px;
     border-radius: 30px;
-    font-size: 150%;
+    font-size: 100%;
 }
 .tijden{
     background-color: lightskyblue;
@@ -235,6 +235,30 @@ section{
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
+}
+.slideshow{
+    height: 380px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    margin-bottom: 40px;
+    border:darkslategrey solid 8px ;
+    border-radius: 30px;
+}
+.foto{
+    height: 390px;
+    width: 22vw;
+    padding-left: 35px ;
+    padding-right: 35px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.left ,.right{
+  height: 130px;
+  width: 150px;
+  border-radius: 10px;
 }
 #container{
     background-color: red;
