@@ -180,9 +180,7 @@ img{
     border-radius: 5px;
     transition-duration: 0.3s;
 }
-img:hover{
-    transform: scale(1.05)
-}
+
 .contactgegevens{
     display: flex ;
     width: 97vw;
@@ -223,6 +221,17 @@ img:hover{
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
+}
+#container{
+    background-color: red;
+    width: 80vw;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: inset 2px black;
 }
 @media screen and (max-width:1000px) {
     article{
