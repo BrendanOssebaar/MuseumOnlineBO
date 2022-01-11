@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheepvaartmuseum</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="">
 </head>
 
 <body>
@@ -40,10 +39,7 @@
         </div>
     </nav>
     <article class="pic1">
-        <figure><a
-                href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hetscheepvaartmuseum.nl%2Fdoen%2Ftentoonstellingen%2Fwillem-van-de-velde-en-zoon&psig=AOvVaw0qKy4IWocLZohpxbOazkNt&ust=1638959915362000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjulM-_0fQCFQAAAAAdAAAAABAD"><img
-                    src="https://www.hetscheepvaartmuseum.nl/sites/default/files/2020-01/20154508_M%2C%20Schepen%20op%20kalm%20water%20in%20de%20avond%2C%20Willem%20van%20de%20Velde%20de%20Jonge%2C%201670%20-%201707.jpg"
-                    alt="Een schilderij van Willem van de velde & zoon, Een ship in gevecht met andere schepen"> </a>
+        <figure id="linkpic"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hetscheepvaartmuseum.nl%2Fdoen%2Ftentoonstellingen%2Fwillem-van-de-velde-en-zoon&psig=AOvVaw0qKy4IWocLZohpxbOazkNt&ust=1638959915362000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjulM-_0fQCFQAAAAAdAAAAABAD"><img src="https://www.hetscheepvaartmuseum.nl/sites/default/files/2020-01/20154508_M%2C%20Schepen%20op%20kalm%20water%20in%20de%20avond%2C%20Willem%20van%20de%20Velde%20de%20Jonge%2C%201670%20-%201707.jpg" alt="Een schilderij van Willem van de velde & zoon, Een ship in gevecht met andere schepen"> </a>
             <figcaption>
             </figcaption>
         </figure>
@@ -67,15 +63,24 @@
             >
         </button>
     </article>
-    <article id="contactgegevens" class="contactgegevens">
-        <div id="contacten" class="contacten">
-            <h1>Contacts</h1>
-            <p>020 523 2222,</p>
-            <p>Kattenburgerplein 1</p>
-            <p>1018 KK Amsterdam </p>
-            <p>info@hetscheepvaartmuseum.nl</p>
-
+    <div id="container">
+        <img id="foto" src="img/" height="500px" alt="foto's">
+        <div id="interactie">
+            <div id="title"></div>
+            <input type="text" id="myInput" autocomplete="off">
+            <input type="button" value="Go" onclick="getInput()">
         </div>
+    
+    
+    </div>
+    <div id="contactgegevens" class="contactgegevens">
+         <div id="contacten" class="contacten">
+            <h1>Contacts</h1>                
+            <div>Kattenburgerplein 1</div>                     
+            <div>1018 KK Amsterdam </div>          
+            <div>020 523 2222,</div>              
+            <div>info@hetscheepvaartmuseum.nl</div>    
+        </div>       
         <div id="tijden" class="tijden">
             <h1>openingstijden</h1>
             <p>vakantie openingstijden - van maandag t/m zondag10.00 - 17.00 uur</p>
@@ -83,7 +88,8 @@
             <p>bibliotheek (dinsdag t/m vrijdag) 10.00 - 17.00 uur</p>
             <p>museum (dinsdag t/m zondag) 10.00 - 17.00 uur</p>
         </div>
-    </article>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
