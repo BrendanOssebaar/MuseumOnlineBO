@@ -271,6 +271,12 @@ section{
     flex-direction: column;
     border: inset 2px black;
 }
+@media screen and (max-width:1225px){
+    .contactgegevens{ 
+        font-size: 100%;
+        height: 200px;
+    }
+}
 @media screen and (max-width:1000px) {
     article{
         width: 80vw;
