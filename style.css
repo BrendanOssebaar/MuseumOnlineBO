@@ -12,6 +12,12 @@ h2{
     color: white;
     
 }
+p{
+    background-color: none;
+    font-size: 70%;
+    margin: auto;
+
+}
 nav{
     background: url(https://wallpaperaccess.com/full/562838.jpg) center;
     width: 100%;
@@ -183,26 +189,34 @@ img{
 
 .contactgegevens{
     display: flex ;
-    width: 97vw;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90vw;
     background-color: lightskyblue;
     border: 8px solid darkslategrey;
     height: 300px;
-}
-.contacten{
-    display: table-row;
-    margin-left: 20px;
-    margin-top: 6px;
+    border-radius: 30px;
+    font-size: 150%;
 }
 .tijden{
     background-color: lightskyblue;
     text-align: right;
-    margin-right: 10px;
-    margin-top: 6px;
 }
 .reviewpage{
-    background-color: darkgoldenrod;
     width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+section{
+    width: 30%;
+    margin: 10px;
+    border:solid darkslategrey 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: skyblue;
 }
 
 .Boven{
@@ -253,6 +267,17 @@ img{
         width: 100vw;
     }
 }
+@media screen and (max-width:940px){
+    .contactgegevens{
+        font-size: 80% ;
+        display: block;
+        height: 400px;
+        text-align: center;
+    }
+    .tijden{
+        text-align: center;
+    }
+}
 
 @media screen and(max-width: 600px) {
     body{
@@ -280,3 +305,4 @@ img{
         width: 100vw;
     }
 }
+
