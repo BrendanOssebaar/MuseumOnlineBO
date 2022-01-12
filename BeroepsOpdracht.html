@@ -53,15 +53,16 @@
 
     </article>
     <article class="slideshow">
-        <button class="left">
+        <button class="left" onclick="onClickPrevious">
             <
         </button>
-        <img class="foto" src="img/de-scheepornamenten.jpg" alt="1 van de schepen van de voc">
-        <img class="foto" src="img/voc (2).jpg" alt="1 van de schepen van de voc">
-        <img class="foto" src="img/de-navigatie-instrumenten.jpg" alt="1 van de schepen van de voc">
-        <button class="right">
+        <img class="foto" id="img" src="img/fotoslider0.jpg" alt="1 van de schepen van de voc">
+        <img class="foto" id="img" src="img/fotoslider1.jpg" alt="1 van de schepen van de voc">
+        <img class="foto" id="img" src="img/fotoslider2.jpg" alt="1 van de schepen van de voc">
+        <button class="right" onclick="onClickNext">
             >
         </button>
+
     </article>
     <div id="container">
         <img id="foto" src="img/" height="500px" alt="foto's">
@@ -88,7 +89,7 @@
             <p>bibliotheek (dinsdag t/m vrijdag) 10.00 - 17.00 uur</p>
             <p>museum (dinsdag t/m zondag) 10.00 - 17.00 uur</p>
         </div>
-    </div>
+    </div> 
     <script src="script.js"></script>
 </body>
 
