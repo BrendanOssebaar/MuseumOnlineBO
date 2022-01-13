@@ -62,3 +62,58 @@ function getInput(){
     myInput.value="";
     myInput.focus();
 }
+var position = 0;
+var img1 = "img/fotoslider0.jpg";
+var img2 = "img/fotoslider1.jpg";
+var img3 = "img/fotoslider2.jpg";
+var img4 = "img/fotoslider3.jpg";
+var img5 = "img/fotoslider4.jpg";
+var img6 = "img/fotoslider5.jpg";
+var img7 = "img/fotoslider6.jpg";
+var img8 = "img/fotoslider7.jpg";
+var imgelement =document.getElementById("img")
+function onClickNext(){          
+   position = position + 1;
+   console.log("position is "+ position);
+   setImage();
+
+   if (position == 7){
+       position = 0;
+   }        
+}
+function onClickPrevious(){ 
+   position = position - 1;
+
+   if (position == - 1){
+       position = 6;
+   }    
+   setImage();
+ 
+
+}
+
+function setImage(){
+   if (position == 0){
+       imgelemen.src = img1;  
+   }
+   else if(position == 1){
+       imgelement.src = img2
+   }
+   else if (position == 2){
+       imgelement.src = img3;  
+   }
+   else if(position == 3){
+       imgelement.src = img4
+   }
+   else if (position == 4){
+       imgelement.src = img5;  
+   }
+   else if(position == 5){
+       imgelement.src = img6
+   }
+   else if (position == 6){
+       imgelement.src = img7;  
+   }
+   
+
+}
