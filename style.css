@@ -174,6 +174,78 @@ button{
 button:hover{
     background-color: cyan;
 }
+#TitelTent{
+    position: absolute;
+}
+#Tentoonstellingen{
+    width: 90vw;
+    height: 700px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    border: 8px solid darkslategray;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.TentLinks{
+    width: 7.5vw;
+    height: 50px;
+    margin: auto;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TentLinks:hover{
+    background-color: cyan;
+}
+#TentRechts{
+    width: 7.5vw;
+    height: 50px;
+    margin: auto;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#TentRechts:hover{
+    background-color: cyan;
+}
+.tentoonstelling1{
+    width: 25vw;
+    height: 500px;
+    margin: auto 5px auto 5px;
+}
+.tentoonstelling2{
+    width: 25vw;
+    height: 500px;
+    margin: auto 5px auto 5px;
+}
+.tentoonstelling3{
+    width: 25vw;
+    height: 500px;
+    margin: auto 5px auto 5px;
+}
 
 article{
     margin: 0 auto;
