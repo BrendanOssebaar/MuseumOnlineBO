@@ -235,18 +235,49 @@ button:hover{
     width: 25vw;
     height: 500px;
     margin: auto 5px auto 5px;
+    
+}
+.tentoonstelling1:hover{
+    opacity: 0.5;
+    
+}
+.TekstTent1{
+    position: absolute;
+    left: 25.8%;
+    top: 1450px;
+    transform: translate(-50%, -50%);
+    background-color: darkviolet;
 }
 .tentoonstelling2{
     width: 25vw;
     height: 500px;
     margin: auto 5px auto 5px;
 }
+.tentoonstelling2:hover{
+    opacity: 0.5;
+}
+.TekstTent2{
+    position: absolute;
+    left: 51.5%;
+    top: 1500px;
+    transform: translate(-50%, -50%);
+    background-color: darkviolet;
+}
 .tentoonstelling3{
     width: 25vw;
     height: 500px;
     margin: auto 5px auto 5px;
 }
-
+.tentoonstelling3:hover{
+    opacity: 0.5;
+}
+.TekstTent3{
+    position: absolute;
+    left: 75.5%;
+    top: 1450px;
+    transform: translate(-50%, -50%);
+    background-color: darkviolet;
+}
 article{
     margin: 0 auto;
     width: 60vw;
@@ -389,8 +420,8 @@ section{
         width: 100vw;
         padding:20px;
     }
-    h1{
-        font-size: 180%;
+    h2{
+        font-size: 80%;
 
     }
     footer > p{

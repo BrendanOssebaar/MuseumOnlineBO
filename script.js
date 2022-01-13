@@ -62,6 +62,64 @@ function getInput(){
     myInput.value="";
     myInput.focus();
 }
+const Titel = document.getElementById("Title");
+const Foto = document.getElementById("Foto");
+let Tentoonstellingen = [
+    {
+        "Title":"Locatie 0",
+        "image":"img/0.jpg"
+    },
+    {
+        "Title":"Locatie 1",
+        "image":"img/1.jpg"
+    },
+    {
+        "Title":"Locatie 2",
+        "image":"img/2.jpg"
+    },
+    {
+        "Title":"Locatie 3",
+        "image":"img/3.jpg"
+    },
+    {
+        "Title":"Locatie 4",
+        "image":"img/4.jpg"
+    },
+    {
+        "Title":"Locatie 5",
+        "image":"img/5.jpg"
+    },
+    {
+        "Title":"Locatie 6",
+        "image":"img/6.jpg"
+    },
+    {
+        "Title":"Locatie 7",
+        "image":"img/7.jpg"
+    },
+    {
+        "Title":"Locatie 8",
+        "image":"img/8.jpg"
+    },
+    {
+        "Title":"Locatie 9",
+        "image":"img/9.jpg"
+    },
+    {
+        "Title":"Locatie 10",
+        "image":"img/10.jpg"
+    },
+    {
+        "Title":"Locatie 11",
+        "image":"img/11.jpg"
+    }
+]
+function show(index){
+    Titel.innerHTML = Tentoonstellingen[index].Title;
+    Foto.src = Tentoonstellingen[index].image;
+}
+
+
 var position = 0;
 var img1 = "img/fotoslider0.jpg";
 var img2 = "img/fotoslider1.jpg";
