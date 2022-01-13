@@ -62,6 +62,7 @@ function getInput(){
     myInput.value="";
     myInput.focus();
 }
+
 var position = 0;
 var img1 = "img/fotoslider0.jpg";
 var img2 = "img/fotoslider1.jpg";
@@ -72,6 +73,7 @@ var img6 = "img/fotoslider5.jpg";
 var img7 = "img/fotoslider6.jpg";
 var img8 = "img/fotoslider7.jpg";
 var imgelement =document.getElementById("img")
+
 function onClickNext(){          
    position = position + 1;
    console.log("position is "+ position);
