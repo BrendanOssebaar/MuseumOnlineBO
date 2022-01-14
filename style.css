@@ -347,7 +347,7 @@ section{
     height: 600px;
     background-size: cover;
     animation-name: fotoslider ;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     border: solid black;
     border-radius: 15px;
