@@ -67,51 +67,51 @@ const Foto = document.getElementById("Foto");
 let Tentoonstellingen = [
     {
         "Title":"Locatie 0",
-        "image":"img/0.jpg"
+        "Foto":"Screenshots/Contactgegevens.JPG"
     },
     {
         "Title":"Locatie 1",
-        "image":"img/1.jpg"
+        "Foto":"img/1.jpg"
     },
     {
         "Title":"Locatie 2",
-        "image":"img/2.jpg"
+        "Foto":"img/2.jpg"
     },
     {
         "Title":"Locatie 3",
-        "image":"img/3.jpg"
+        "Foto":"img/3.jpg"
     },
     {
         "Title":"Locatie 4",
-        "image":"img/4.jpg"
+        "Foto":"img/4.jpg"
     },
     {
         "Title":"Locatie 5",
-        "image":"img/5.jpg"
+        "Foto":"img/5.jpg"
     },
     {
         "Title":"Locatie 6",
-        "image":"img/6.jpg"
+        "Foto":"img/6.jpg"
     },
     {
         "Title":"Locatie 7",
-        "image":"img/7.jpg"
+        "Foto":"img/7.jpg"
     },
     {
         "Title":"Locatie 8",
-        "image":"img/8.jpg"
+        "Foto":"img/8.jpg"
     },
     {
         "Title":"Locatie 9",
-        "image":"img/9.jpg"
+        "Foto":"img/9.jpg"
     },
     {
         "Title":"Locatie 10",
-        "image":"img/10.jpg"
+        "Foto":"img/10.jpg"
     },
     {
         "Title":"Locatie 11",
-        "image":"img/11.jpg"
+        "Foto":"img/11.jpg"
     }
 ]
 function show(index){

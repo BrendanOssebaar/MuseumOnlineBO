@@ -238,7 +238,7 @@ button:hover{
     
 }
 .tentoonstelling1:hover{
-    opacity: 0.5;
+    background:linear-gradient(Transparent,80%,black);
     
 }
 .TekstTent1{
@@ -254,7 +254,7 @@ button:hover{
     margin: auto 5px auto 5px;
 }
 .tentoonstelling2:hover{
-    opacity: 0.5;
+    background:linear-gradient(Transparent,80%,black);
 }
 .TekstTent2{
     position: absolute;
@@ -267,10 +267,12 @@ button:hover{
     width: 25vw;
     height: 500px;
     margin: auto 5px auto 5px;
+    position:relative;
 }
 .tentoonstelling3:hover{
-    opacity: 0.5;
+    background:linear-gradient(white,80%,black);
 }
+
 .TekstTent3{
     position: absolute;
     left: 75.5%;
