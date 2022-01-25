@@ -17,7 +17,7 @@ p{
     background-color: none;
     font-size: 70%;
     margin: auto;
-    color: white;
+    color: black;
 
 }
 nav{
@@ -190,8 +190,28 @@ nav> div >a{
 button:hover{
     background-color: cyan;
 }
+.pic1 > p{
+    border: solid black;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
 #TitelTent{
     position: absolute;
+}
+#Tentoonstellingen > article{
+    border: black solid;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+section > h2{
+    font-size: 30px;
+    color: black;
+}
+section > article >h3{
+    font-size: 20px;
 }
 #Tentoonstellingen{
     width: 90vw;
@@ -205,50 +225,17 @@ button:hover{
     border-radius: 30px;
     margin-bottom: 30px;
 }
-.TentLinks{
-    width: 7.5vw;
-    height: 50px;
-    margin: auto;
-    text-decoration: none;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: darkblue;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    border-radius: 10px;
-    transition-duration: 0.3s;
+section > p{
+    position: relative;
+    width: 25vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.TentLinks:hover{
-    background-color: cyan;
-}
-#TentRechts{
-    width: 7.5vw;
-    height: 50px;
-    margin: auto;
-    text-decoration: none;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: darkblue;
+    flex-direction: column;
+    justify-content: left;
     color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    border-radius: 10px;
-    transition-duration: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#TentRechts:hover{
-    background-color: cyan;
+    text-decoration: underline;
 }
 .tentoonstelling1{
-    width: 25vw;
+    width: 22vw;
     height: 500px;
     margin: auto 5px auto 5px;
     
@@ -257,30 +244,16 @@ button:hover{
     background:linear-gradient(Transparent,80%,black);
     
 }
-.TekstTent1{
-    position: absolute;
-    left: 25.8%;
-    top: 1450px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
-}
 .tentoonstelling2{
-    width: 25vw;
+    width: 22vw;
     height: 500px;
     margin: auto 5px auto 5px;
 }
 .tentoonstelling2:hover{
     background:linear-gradient(Transparent,80%,black);
 }
-.TekstTent2{
-    position: absolute;
-    left: 51.5%;
-    top: 1500px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
-}
 .tentoonstelling3{
-    width: 25vw;
+    width: 22vw;
     height: 500px;
     margin: auto 5px auto 5px;
     position:relative;
@@ -288,16 +261,6 @@ button:hover{
 .tentoonstelling3:hover{
     background:linear-gradient(white,80%,black);
 }
-
-.TekstTent3{
-    position: absolute;
-    left: 75.5%;
-    top: 1450px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
-}
-
-
 .contactgegevens{
     display: flex ;
     align-items: center;
