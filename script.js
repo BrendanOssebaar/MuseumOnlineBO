@@ -44,7 +44,7 @@ let lokaties =
             }
         },
         {//beneden
-            "titel": "apart hokje1",
+            "titel": "onderwater tentoonstelling",
             "image": "img/InteractiveRoute/beneden.PNG",
             "directions": {
                 "noord": 0,
@@ -52,7 +52,7 @@ let lokaties =
             }
         },
         { //links
-            "titel": "Docenten Kamer",
+            "titel": "de goude eeuw tentoonstelling",
             "image": "img/InteractiveRoute/Links.PNG",
             "directions": {
                 "oost": 0,
