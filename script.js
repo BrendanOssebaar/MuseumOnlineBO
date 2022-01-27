@@ -108,8 +108,8 @@ function getInput() {
 }
 
 function goDirection(richting) {
-    let punt_index = lokaties[current_index].directions[richting];
-    show(punt_index);
+    let puntindex = lokaties[current_index].directions[richting];
+    show(puntindex);
 
 }
 

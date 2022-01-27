@@ -90,23 +90,21 @@
         </figure>
     </article>
 
-    <div id="container">
-        <img id="foto" src="img/achtergrond1.jpg" height="500px" alt="foto's voor interactieve route">
-        <div id="interactie">
-            <div id="title"></div>
-            <input type="text" id="myInput" autocomplete="off">
-            <input type="button" value="Go" onclick="getInput()">
+    <div id="containers">
+        <img id="myImage" src="img/InteractiveRoute/binnenplaats.PNG" height="600px" alt="foto sb">
+        <div id="myInteraction">
+            <div id="myTitle">Location</div>
+            <h3 id="kant">Which way do you want?</h3>
+            <nav class="Knoppen">
+                <button id="knopNoord" onclick="goDirection('noord')">North</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopOost" onclick="goDirection('oost')">East</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">South</button>
+            </nav>
+            <img src="img/InteractiveRoute/map_Scheepsvaardmuseum.png" id=mapImage>
         </div>
-    
-        <div id="container">
-            <img id="foto" src="img/" height="500px" alt="foto's voor interactieve route">
-            <div id="interactie">
-                <div id="title"></div>
-                <input type="text" id="myInput" autocomplete="off">
-                <input type="button" value="Go" onclick="getInput()">
-            </div>   
-        
-        </div>
+    </div>
+    </div>
         <div id="contactgegevens" class="contactgegevens">
             <div id="contacten" class="contacten">
                 <h2>Contacts</h1>                
