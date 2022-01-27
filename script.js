@@ -1,178 +1,116 @@
-const titel = document.getElementById("title");
-const foto = document.getElementById("foto");
+
+//INTERACTIVE ROUTE CODE
+const myTitle = document.getElementById("myTitle")
+const myImage = document.getElementById("myImage")
 const myInput = document.getElementById("myInput")
-let locaties = [
-    {
-        "title":"Locatie 0",
-        "image":"img/0.jpg"
-    },
-    {
-        "title":"Locatie 1",
-        "image":"img/1.jpg"
-    },
-    {
-        "title":"Locatie 2",
-        "image":"img/2.jpg"
-    },
-    {
-        "title":"Locatie 3",
-        "image":"img/3.jpg"
-    },
-    {
-        "title":"Locatie 4",
-        "image":"img/4.jpg"
-    },
-    {
-        "title":"Locatie 5",
-        "image":"img/5.jpg"
-    },
-    {
-        "title":"Locatie 6",
-        "image":"img/6.jpg"
-    },
-    {
-        "title":"Locatie 7",
-        "image":"img/7.jpg"
-    },
-    {
-        "title":"Locatie 8",
-        "image":"img/8.jpg"
-    },
-    {
-        "title":"Locatie 9",
-        "image":"img/9.jpg"
-    },
-    {
-        "title":"Locatie 10",
-        "image":"img/10.jpg"
-    },
-    {
-        "title":"Locatie 11",
-        "image":"img/11.jpg"
-    }
-]
 
-function show(index){
-    titel.innerHTML = locaties[index].title;
-    foto.src = locaties[index].image;
+const knopNoord = document.getElementById('knopNoord')
+const knopOost = document.getElementById('knopoost')
+const knopZuid = document.getElementById('knopZuid')
+const knopWest = document.getElementById('knopWest')
+
+let directionButtons = {
+    "noord": document.getElementById('knopNoord'),
+    "oost": document.getElementById('knopOost'),
+    "zuid": document.getElementById('knopZuid'),
+    "west": document.getElementById('knopWest'),
+}
+let current_index = 0;
+
+let lokaties =
+    [
+        { //binnenplaapt
+            "titel": "Binnenplaats",
+            "image": "img/InteractiveRoute/binnenplaats.PNG",
+            "directions": {
+                "noord": 1,
+                "oost": 2,
+                "zuid": 3,
+                "west": 4,
+            }
+        },
+        { //boven
+            "titel": "Ingang",
+            "image": "img/InteractiveRoute/ingang.PNG",
+            "directions": {
+                "zuid": 0,
+            }
+        },
+        { //rechts
+            "titel": "Navigatie en oude kaarten",
+            "image": "img/InteractiveRoute/rechts.PNG",
+            "directions": {
+                "west": 0,
+            }
+        },
+        {//beneden
+            "titel": "apart hokje1",
+            "image": "img/InteractiveRoute/beneden.PNG",
+            "directions": {
+                "noord": 0,
+
+            }
+        },
+        { //links
+            "titel": "Docenten Kamer",
+            "image": "img/InteractiveRoute/Links.PNG",
+            "directions": {
+                "oost": 0,
+            }
+        }
+    ]
+//myTitle.innerHTML = "dit is door het script toegevoegd"//
+//myImage.src = "img/1.jpg"//
+
+function show(index) {
+    myTitle.innerHTML = lokaties[index].titel;
+    myImage.src = lokaties[index].image;
+    current_index = index;
+
+    //Knoppen opnieuw berekenen
+    updateDirections();
 }
 
-function getInput(){
+function updateDirections() {
+    // haal de mogelijke directions op voor de current_index
+    let possible = lokaties[current_index].directions;
+
+    // Zet de directions keys in een aparte variabele
+    let possible_keys = Object.keys(possible);
+
+    console.log(possible)
+    console.log(possible_keys)
+
+    // Zet de keys van de buttons in een aparte variable
+    let button_keys = Object.keys(directionButtons);
+    console.log(button_keys)
+
+    // Zet eerst alle knoppen uit
+    for (const key of button_keys){
+        directionButtons[key].style.visibility = "hidden";
+    }
+
+    // Zet nu de mogelijke knoppen (directions) aan
+    for(const key of possible_keys){
+        directionButtons[key].style.visibility = "visible";
+    }
+
+    
+
+}
+
+function getInput() {
     show(myInput.value);
-    myInput.value="";
+    //console.log(myInput.value)
+    myInput.value = "";
     myInput.focus();
-}
-const Titel = document.getElementById("Title");
-const Foto = document.getElementById("Foto");
-let Tentoonstellingen = [
-    {
-        "Title":"Locatie 0",
-        "image":"img/0.jpg"
-    },
-    {
-        "Title":"Locatie 1",
-        "image":"img/1.jpg"
-    },
-    {
-        "Title":"Locatie 2",
-        "image":"img/2.jpg"
-    },
-    {
-        "Title":"Locatie 3",
-        "image":"img/3.jpg"
-    },
-    {
-        "Title":"Locatie 4",
-        "image":"img/4.jpg"
-    },
-    {
-        "Title":"Locatie 5",
-        "image":"img/5.jpg"
-    },
-    {
-        "Title":"Locatie 6",
-        "image":"img/6.jpg"
-    },
-    {
-        "Title":"Locatie 7",
-        "image":"img/7.jpg"
-    },
-    {
-        "Title":"Locatie 8",
-        "image":"img/8.jpg"
-    },
-    {
-        "Title":"Locatie 9",
-        "image":"img/9.jpg"
-    },
-    {
-        "Title":"Locatie 10",
-        "image":"img/10.jpg"
-    },
-    {
-        "Title":"Locatie 11",
-        "image":"img/11.jpg"
-    }
-]
-function show(index){
-    Titel.innerHTML = Tentoonstellingen[index].Title;
-    Foto.src = Tentoonstellingen[index].image;
-}
-
-
-var position = 0;
-var img1 = "img/fotoslider0.jpg";
-var img2 = "img/fotoslider1.jpg";
-var img3 = "img/fotoslider2.jpg";
-var img4 = "img/fotoslider3.jpg";
-var img5 = "img/fotoslider4.jpg";
-var img6 = "img/fotoslider5.jpg";
-var img7 = "img/fotoslider6.jpg";
-var img8 = "img/fotoslider7.jpg";
-var imgelement =document.getElementById("img")
-
-function onClickNext(){          
-   position = position + 1;
-   console.log("position is "+ position);
-   setImage();
-
-   if (position == 7){
-       position = 0;
-   }        
-}
-function onClickPrevious(){ 
-   position = position - 1;
-
-   if (position == - 1){
-       position = 6;
-   }    
-   setImage();
- 
 
 }
 
-function setImage(){
-   if (position == 0){
-       imgelemen.src = img1;  
-   }
-   else if(position == 1){
-       imgelement.src = img2
-   }
-   else if (position == 2){
-       imgelement.src = img3;  
-   }
-   else if(position == 3){
-       imgelement.src = img4
-   }
-   else if (position == 4){
-       imgelement.src = img5;  
-   }
-   else if(position == 5){
-       imgelement.src = img6
-   }
-   else if (position == 6){
-       imgelement.src = img7;  
-   }
-   
+function goDirection(richting) {
+    let punt_index = lokaties[current_index].directions[richting];
+    show(punt_index);
 
 }
+
+show(0);

@@ -15,15 +15,7 @@ h2{
 p{
     font-size: 70%;
     margin: auto;
-    
-    -webkit-text-stroke: 1px black;
-    color: white;
-    text-shadow:
-        3px 3px 0 #000,
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
+    color: black;
 
 }
 nav{
@@ -196,8 +188,28 @@ nav> div >a{
 button:hover{
     background-color: cyan;
 }
+.pic1 > p{
+    border: solid black;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
 #TitelTent{
     position: absolute;
+}
+#Tentoonstellingen > article{
+    border: black solid;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+section > h2{
+    font-size: 30px;
+    color: black;
+}
+section > article >h3{
+    font-size: 20px;
 }
 #Tentoonstellingen{
     width: 90vw;
@@ -211,96 +223,51 @@ button:hover{
     border-radius: 30px;
     margin-bottom: 30px;
 }
-.TentLinks{
-    width: 7.5vw;
-    height: 50px;
-    margin: auto;
-    text-decoration: none;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: darkblue;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    border-radius: 10px;
-    transition-duration: 0.3s;
+section > p{
+    position: relative;
+    width: 25vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.TentLinks:hover{
-    background-color: cyan;
-}
-#TentRechts{
-    width: 7.5vw;
-    height: 50px;
-    margin: auto;
-    text-decoration: none;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: darkblue;
+    flex-direction: column;
+    justify-content: left;
     color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    border-radius: 10px;
-    transition-duration: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#TentRechts:hover{
-    background-color: cyan;
+    text-decoration: underline;
 }
 .tentoonstelling1{
-    width: 25vw;
+    width: 22vw;
     height: 500px;
     margin: auto 5px auto 5px;
-    
-}
-.tentoonstelling1:hover{
-    opacity: 0.5;
-    
-}
-.TekstTent1{
-    position: absolute;
-    left: 25.8%;
-    top: 1450px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
-}
-.tentoonstelling2{
-    width: 25vw;
-    height: 500px;
-    margin: auto 5px auto 5px;
-}
-.tentoonstelling2:hover{
-    opacity: 0.5;
-}
-.TekstTent2{
-    position: absolute;
-    left: 51.5%;
-    top: 1500px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
-}
-.tentoonstelling3{
-    width: 25vw;
-    height: 500px;
-    margin: auto 5px auto 5px;
-}
-.tentoonstelling3:hover{
-    opacity: 0.5;
-}
-.TekstTent3{
-    position: absolute;
-    left: 75.5%;
-    top: 1450px;
-    transform: translate(-50%, -50%);
-    background-color: darkviolet;
+    background-size: cover;
+    animation-name: tentoonstelling1 ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: solid black;
+    border-radius: 15px;
 }
 
+.tentoonstelling2{
+    width: 22vw;
+    height: 500px;
+    margin: auto 5px auto 5px;
+    background-size: cover;
+    animation-name: tentoonstelling2 ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: solid black;
+    border-radius: 15px;
+}
+
+.tentoonstelling3{
+    width: 22vw;
+    height: 500px;
+    margin: auto 5px auto 5px;
+    position:relative;
+    background-size: cover;
+    animation-name: tentoonstelling3 ;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: solid black;
+    border-radius: 15px;
+}
 
 .contactgegevens{
     display: flex ;
@@ -357,6 +324,192 @@ button:hover{
     border: solid black;
     border-radius: 15px;
 }
+@keyframes tentoonstelling1 {
+    0%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    12.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    24%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    25%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    35.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    49%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG );
+    }
+    50%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG)    
+    }
+    55%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);    
+    }
+    60%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    65%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG)    
+    }
+    70%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-schilders.JPG);    
+    }
+    75%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG);
+    }
+    80%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG);
+    }
+    87.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-walvis.JPG);
+    }
+    100%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG);
+    }
+}
+@keyframes tentoonstelling2 {
+    0%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    12.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    24%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    25%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    35.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    49%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    50%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG)    
+    }
+    55%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-schilders.JPG);    
+    }
+    60%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG);
+    }
+    65%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG)    
+    }
+    70%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-walvis.JPG);    
+    }
+    75%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG);
+    }
+    80%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    87.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    100%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+}
+@keyframes tentoonstelling3 {
+    0%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    12.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    24%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-navigatie.JPG);
+    }
+    25%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG);
+    }
+    35.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-schilders.JPG);
+    }
+    49%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-schilders.JPG);
+    }
+    50%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG)    
+    }
+    55%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-walvis.JPG);    
+    }
+    60%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-walvis.JPG);
+    }
+    65%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG)    
+    }
+    70%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);    
+    }
+    75%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-goudeneeuw.JPG);
+    }
+    80%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    87.5%{
+        opacity: 1;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+    100%{
+        opacity: 0;
+        background-image: url(img/Tentoonstelling-maps.JPG);
+    }
+}
 @keyframes fotoslider {
     0%{
         opacity: 0;
@@ -411,16 +564,49 @@ button:hover{
         background-image: url(img/e22a5252c555a17d35635b88f64a51830864fd53.jpeg);
     }
 }
-#container{
+#containers{
+    background-color: aliceblue;
+    width: 1300px;
+    margin: 50px auto auto auto;
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px;
+    margin-bottom: 70px;
+    background: u;
+}
+.Knoppen{
+    background: none;
+    border-bottom: none;
+}
+#Lokatie{
+    margin-left: 350px;
+}
+h3{
+    margin-left: 240px;
+}
+#myInteraction{
+    padding: 10px;
+}
+#myImage{
+    object-fit: cover;
+}
 
-    width: 80vw;
-    height: 470px;
-    margin: 50px auto 50px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: inset 2px black;
+#mapImage{
+    max-width: 350px;
+    height: auto;
+    margin-left: 290px;
+
+}
+nav > button{
+    height: 100px;
+    width: 150px;
+    border: solid orange ;
+    background-color: skyblue;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 .review{
     width: 32vw;
