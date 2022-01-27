@@ -582,7 +582,10 @@ section > p{
 #Lokatie{
     margin-left: 350px;
 }
-h3{
+#kant{
+    margin-left: 90px;
+}
+#myTitle{
     margin-left: 240px;
 }
 #myInteraction{
@@ -593,7 +596,7 @@ h3{
 }
 
 #mapImage{
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     margin-left: 290px;
 
