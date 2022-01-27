@@ -6,15 +6,13 @@ body{
     font-size: 30px;
     margin: 0;
     background-image: url(img/achtergrond1.jpg);
+ 
 }
 h2{
-    font-size: 20px;
-    
+    font-size: 20px;   
     color: white;
-    
 }
 p{
-    background-color: none;
     font-size: 70%;
     margin: auto;
     color: black;
@@ -566,16 +564,58 @@ section > p{
         background-image: url(img/e22a5252c555a17d35635b88f64a51830864fd53.jpeg);
     }
 }
-#container{
+#containers{
+    background-color: aliceblue;
+    width: 1300px;
+    margin: 50px auto auto auto;
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px;
+    margin-bottom: 70px;
+    background: u;
+}
+.Knoppen{
+    background: none;
+    border-bottom: none;
+}
+#Lokatie{
+    margin-left: 350px;
+}
+h3{
+    margin-left: 240px;
+}
+#myInteraction{
+    padding: 10px;
+}
+#myImage{
+    object-fit: cover;
+}
 
-    width: 80vw;
-    height: 470px;
-    margin: 50px auto 50px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: inset 2px black;
+#mapImage{
+    max-width: 350px;
+    height: auto;
+    margin-left: 290px;
+
+}
+nav > button{
+    height: 100px;
+    width: 150px;
+    border: solid orange ;
+    background-color: skyblue;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.review{
+    width: 32vw;
+    background-color: skyblue;
+    height: 250px;
+    margin-left: 10px;
+    padding: 9px;
+    border: beige solid 10px;
+    border-radius: 24px;
 }
 @media screen and (max-width:1225px){
     .contactgegevens{ 

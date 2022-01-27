@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <a id="top" class="vertaling" href="BeroepsOpdracht.html">🌐Vertalen</a>
-    <a class="Boven" href="#top">⬆</a>
-    <nav>
+    <div class="maincontainer">
+        <a id="top" class="vertaling" href="BeroepsOpdracht.html">🌐Vertalen</a>
+        <a class="Boven" href="#top">⬆</a>
+        <nav>
 
         <h2 class="logo-text">
             <div>Het Scheepvaart</div>
@@ -99,25 +100,34 @@
             <input type="text" id="myInput" autocomplete="off">
             <input type="button" value="Go" onclick="getInput()">
         </div>
-
-    </div>
-    <div id="contactgegevens" class="contactgegevens">
-        <div id="contacten" class="contacten">
-            <h2>Contacts</h1>
-                <div>Kattenburgerplein 1</div>
-                <div>1018 KK Amsterdam </div>
-                <div>020 523 2222,</div>
-                <div>info@hetscheepvaartmuseum.nl</div>
+    
+        <div id="container">
+            <img id="foto" src="img/" height="500px" alt="foto's voor interactieve route">
+            <div id="interactie">
+                <div id="title"></div>
+                <input type="text" id="myInput" autocomplete="off">
+                <input type="button" value="Go" onclick="getInput()">
+            </div>   
+        
         </div>
-        <div id="tijden" class="tijden">
-            <h2>Opening hours</h1>
-                <p>Vacation opening hours - Monday - Sunday 10.00 - 17.00 uur</p>
+        <div id="contactgegevens" class="contactgegevens">
+            <div id="contacten" class="contacten">
+                <h2>Contacts</h1>                
+                <div>Kattenburgerplein 1</div>                     
+                <div>1018 KK Amsterdam </div>          
+                <div>020 523 2222,</div>              
+                <div>info@hetscheepvaartmuseum.nl</div>    
+            </div>       
+            <div id="tijden" class="tijden">
+                <h2>Opening hours</h1>
+                <p>Vacation opening hours  - Monday - Sunday 10.00 - 17.00 uur</p>
                 <p>Museum store (tuesday to sunday) 10.00 - 17.00 uur</p>
                 <p>Library (tuesday to friday)10.00 - 17.00 uur</p>
                 <p>Museum (tuesday to sunday) 10.00 - 17.00 uur</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+            </div>
+        </div> 
+        <script src="script.js"></script>
+   </div>
 </body>
 
 </html>
